@@ -1,0 +1,29 @@
+PROMPT 1
+Ahora quiero agregar imágenes al proyecto. Usa la imagen
+"viejooeste.png" (una escena del desierto) como fondo DENTRO del
+canvas, para que se vea el escenario detrás del cuadro y la comida.
+Hazlo solo con CSS y sin tocar el JavaScript (el juego usa clearRect,
+así que el fondo del canvas se ve por transparencia).
+
+PROMPT 2
+El fondo de la página está plano. Ponme un fondo de madera (como la
+pared de un saloon) en todo el body. Si hace falta, genérame una
+textura de madera como imagen (madera.png).
+
+PROMPT 3
+Tengo una imagen de una letra W (Wicon.png) pero trae un fondo de
+cuadros pegado. Límpiala para que el fondo quede transparente,
+guárdala como W.png y agrégala en la parte superior del cartel, como
+un sello/emblema junto al título.
+
+PROMPT 4
+El emblema se ve muy grande. Ajústalo a un tamaño más pequeño y que
+combine con el papel. Verifica que las tres imágenes (viejooeste.png
+de fondo del canvas, la textura de madera del body y W.png del
+emblema) se vean bien y no tapen el juego.
+
+PROMPT 5
+Prueba que el juego siga funcionando igual después de agregar las
+imágenes: moverse con las flechas, atrapar la comida, el puntaje y la
+cuenta regresiva del tiempo. Recuerda que no debíamos tocar el
+JavaScript.

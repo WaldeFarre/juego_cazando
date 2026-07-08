@@ -1,0 +1,33 @@
+ PROMPT 1
+Tengo un juego hecho en HTML, CSS y JavaScript llamado "Cazando"
+(un cuadrado que atrapa comida dentro de un canvas). Mejora SOLO la
+interfaz gráfica modificando únicamente los archivos HTML y CSS, sin
+tocar el JavaScript. No cambies los id de los elementos (areaJuego,
+puntos, tiempo, mensaje), ni los onclick de los botones, ni las
+etiquetas <script>, ni el tamaño del canvas (500x500). Quiero un
+estilo temático de Viejo Oeste, como un cartel de "SE BUSCA".
+Te paso el cazando.html y el cazando.css.
+
+PROMPT 2
+Está quedando bien. Ahora usa tipografías que combinen con el Viejo
+Oeste: una tipo cartel western para el título
+(por ejemplo "Rye") y otra tipo máquina de escribir para el resto
+del texto (por ejemplo "Special Elite").
+
+PROMPT 3
+Los botones de mover se ven sueltos. Acomódalos en forma de cruceta
+(arriba en el centro, y abajo izquierda - abajo - derecha) usando
+SOLO CSS, sin cambiar el HTML de los botones. Que parezcan botones
+de madera y que se hundan al presionarlos. El botón REINICIAR déjalo
+aparte y bien llamativo (rojo).
+
+PROMPT 4
+A los Puntos y al Tiempo ponles estilo de placa de metal, cada una
+con un ícono: una estrella de sheriff para los puntos y un reloj para
+el tiempo. Y al canvas ponle un marco de madera alrededor.
+
+PROMPT 5
+Último detalle: que todo se vea como un cartel de papel viejo clavado
+a una pared de madera, con clavos de hierro en las esquinas.
+Asegúrate de que también se vea bien en el celular y que
+el foco del teclado sea visible en los botones.
