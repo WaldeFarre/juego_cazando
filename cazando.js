@@ -65,15 +65,27 @@ function graficarComida() {
 }
  
 function iniciarJuego() {
+  clearInterval(intervalo);
+
   gatoX = (canvas.width - ANCHO_GATO) / 2;
   gatoY = (canvas.height - ALTO_GATO) / 2;
   comidaX = canvas.width - ANCHO_COMIDA;
   comidaY = canvas.height - ALTO_COMIDA;
 
+  puntos = 0;
+  tiempo = 10;
+  mostrarEnSpan("puntos", puntos);
+  mostrarEnSpan("tiempo", tiempo);
+
+  limpiarCanva();
   graficarGato();
   graficarComida();
 
   intervalo = setInterval(restarTiempo, 1000);
+}
+
+function reiniciar() {
+  iniciarJuego();
 }
 
 function restarTiempo() {
