@@ -7,6 +7,8 @@ let gatoY = 0;
 let comidaX = 0;
 let comidaY = 0;
 let puntos = 0;
+let tiempo = 10;
+let intervalo;
  
 const ANCHO_GATO = 40;
 const ALTO_GATO = 40;
@@ -65,15 +67,20 @@ function graficarComida() {
 function iniciarJuego() {
   gatoX = (canvas.width - ANCHO_GATO) / 2;
   gatoY = (canvas.height - ALTO_GATO) / 2;
- 
- comidaX = canvas.width - ANCHO_COMIDA;
+  comidaX = canvas.width - ANCHO_COMIDA;
   comidaY = canvas.height - ALTO_COMIDA;
- 
+
   graficarGato();
   graficarComida();
+
+  intervalo = setInterval(restarTiempo, 1000);
 }
 
-// Detecta si el gato tocó la comida
+function restarTiempo() {
+  tiempo = tiempo - 1;
+  mostrarEnSpan("tiempo", tiempo);
+}
+
 function detectarColision() {
   if (gatoX < comidaX + ANCHO_COMIDA &&
       gatoX + ANCHO_GATO > comidaX &&
@@ -91,3 +98,4 @@ function detectarColision() {
     graficarComida();
   }
 }
+
