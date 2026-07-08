@@ -6,7 +6,7 @@ let gatoY = 0;
 let comidaX = 0;
 let comidaY = 0;
 let puntos = 0;
-let tiempo = 10;
+let tiempo = 100;
 let intervalo;
 
 const ANCHO_GATO = 40;
@@ -106,7 +106,7 @@ function iniciarJuego() {
   comidaY = canvas.height - ALTO_COMIDA;
  
   puntos = 0;
-  tiempo = 10;
+  tiempo = 100;
   mostrarEnSpan("puntos", puntos);
   mostrarEnSpan("tiempo", tiempo);
  
