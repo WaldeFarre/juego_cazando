@@ -11,7 +11,18 @@ const ANCHO_GATO = 40;
 const ALTO_GATO = 40;
 const ANCHO_COMIDA = 20;
 const ALTO_COMIDA = 20;
- 
+
+function limpiarCanva() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function moverIzquierda() {
+  gatoX = gatoX - 10;
+  limpiarCanva();
+  graficarGato();
+  graficarComida();
+}
+
 function graficarRectangulo(x, y, ancho, alto, color) {
   ctx.fillStyle = color;
   ctx.fillRect(x, y, ancho, alto);
