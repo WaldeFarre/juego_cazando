@@ -23,6 +23,27 @@ function moverIzquierda() {
   graficarComida();
 }
 
+function moverDerecha() {
+  gatoX = gatoX + 10;
+  limpiarCanva();
+  graficarGato();
+  graficarComida();
+}
+
+function moverArriba() {
+  gatoY = gatoY - 10;
+  limpiarCanva();
+  graficarGato();
+  graficarComida();
+}
+
+function moverAbajo() {
+  gatoY = gatoY + 10;
+  limpiarCanva();
+  graficarGato();
+  graficarComida();
+}
+
 function graficarRectangulo(x, y, ancho, alto, color) {
   ctx.fillStyle = color;
   ctx.fillRect(x, y, ancho, alto);
