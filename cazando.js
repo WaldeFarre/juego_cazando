@@ -79,6 +79,11 @@ function iniciarJuego() {
 function restarTiempo() {
   tiempo = tiempo - 1;
   mostrarEnSpan("tiempo", tiempo);
+
+  if (tiempo == 0) {
+    alert("Game Over");
+    clearInterval(intervalo);
+  }
 }
 
 function detectarColision() {
@@ -96,6 +101,11 @@ function detectarColision() {
     limpiarCanva();
     graficarGato();
     graficarComida();
+
+    if (puntos == 6) {
+      alert("¡Ganaste! Cazaste toda la comida");
+      clearInterval(intervalo);
+    }
   }
 }
 
