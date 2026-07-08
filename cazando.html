@@ -1,35 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Juego Cazando</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego Cazando · Viejo Oeste</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Special+Elite&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="cazando.css">
 </head>
 <body onload="iniciarJuego()">
- 
-  <h1>Juego Cazando</h1>
-  <p>Autor: Walde Farré</p>
- 
-  <canvas id="areaJuego" width="500" height="500"></canvas>
- 
- 
-  <div class="controles">
-    <button onclick="moverArriba()">⬆</button>
-    <br>
-    <button onclick="moverIzquierda()">⬅</button>
-    <button onclick="moverAbajo()">⬇</button>
-    <button onclick="moverDerecha()">➡</button>
-  </div>
- 
- 
-  <div class="panel">
-    <span>Puntos: <span id="puntos">0</span></span>
-    <span>Tiempo: <span id="tiempo">10</span></span>
-  </div>
- 
-  <button onclick="reiniciar()">REINICIAR</button>
- 
-  <p id="mensaje"></p>
- 
+
+  <main class="cartel">
+    <span class="clavo clavo--tl" aria-hidden="true"></span>
+    <span class="clavo clavo--tr" aria-hidden="true"></span>
+    <span class="clavo clavo--bl" aria-hidden="true"></span>
+    <span class="clavo clavo--br" aria-hidden="true"></span>
+
+    <header class="cabecera">
+      <p class="eyebrow">&#9733; &nbsp;SE BUSCA&nbsp; &#9733;</p>
+      <div class="titulo-fila">
+        <img class="emblema" src="W.png" alt="W">
+        <h1>Juego Cazando</h1>
+      </div>
+      <p class="autor">Autor: Walde Farr&eacute;</p>
+    </header>
+
+    <div class="marco-canvas">
+      <canvas id="areaJuego" width="500" height="500"></canvas>
+    </div>
+
+    <div class="panel">
+      <span class="placa placa--puntos">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.5 7.1.6-5.4 4.7 1.7 7-6.3-3.8-6.3 3.8 1.7-7-5.4-4.7 7.1-.6z"/></svg>
+        Puntos: <span id="puntos">0</span>
+      </span>
+      <span class="placa placa--tiempo">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.5 2.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Tiempo: <span id="tiempo">10</span>
+      </span>
+    </div>
+
+    <div class="controles">
+      <button onclick="moverArriba()">&#11014;</button>
+      <br>
+      <button onclick="moverIzquierda()">&#11013;</button>
+      <button onclick="moverAbajo()">&#11015;</button>
+      <button onclick="moverDerecha()">&#10145;</button>
+    </div>
+
+    <button class="btn-reiniciar" onclick="reiniciar()">&#8635; REINICIAR</button>
+
+    <p class="instruccion">Atrapa 6 objetivos antes de que se acabe el tiempo.</p>
+    <p id="mensaje"></p>
+  </main>
+
   <script src="utilitarios.js"></script>
   <script src="cazando.js"></script>
 </body>
